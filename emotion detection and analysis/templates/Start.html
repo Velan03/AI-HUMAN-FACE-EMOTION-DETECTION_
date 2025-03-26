@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+  <link href="static/style.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      margin:0;
+      padding:0;
+
+    }
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: yellow
+    }
+
+    h3 {
+      text-align: center;
+      color: white;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    div {
+      text-align: center;
+
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .button {
+      margin-top:20px;
+      background-color: #03506F;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+
+    }
+  </style>
+
+  <title>Facial Emotion Investigator</title>
+
+</head>
+
+<body>
+
+  <body>
+    <!--Heading section-->
+    <div class="a" style="background-color:#FFE3DE;margin-top:0;position:relative; top: 0%; margin-top: 0%; width: 100%;">
+      <div class="animation-area" style="display:flex;flex-direction:column; align-items:center;
+      justify-content:center;
+      text-align:center;height: 100vh;width:100%;display:flex;flex-direction:column; align-items:center;
+      justify-content:center;text-align:center;">
+      <div class="animation-area .container-sm" style="border: 1px solid; box-shadow: 5px 10px 18px #03506F;background-image: url(static/img.jpg); background-size: cover; background-repeat: no-repeat; height: 130vh;width:70%;display:flex;flex-direction:column; align-items:center;
+      justify-content:center;text-align:center;margin:30px;color:white">
+      <div class="animation-area .container-sm" style="height: 50vh;width:90%;display:flex;flex-direction:column; align-items:center;
+      justify-content:center;text-align:center;  margin:30px;color:white; background-color: transparent;">
+      <div style="display: flex;flex-direction:row;">
+        <form action="/option">
+        <p style="font-size: 70px; color: black;float: left;">Facial Emotion Investigator</p>
+        <input type="submit" name="Facial emotion detection" value="Facial emotion detection" class="button" />
+      </form>
+ 
+        
+      </div>
+     
+    </div>
+    </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  
+   
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+
+  </script>
+</body>
+
+</html>
